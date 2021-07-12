@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+
+        <section class="search-box">
+            <input id = "cityName" type="text" class="city-name" placeholder="Enter a city..." required>
+            <select id = "countries" class="country-name">
+                <option disabled selected value="">Choose a country</option>
+                <option value="AF">Afghanistan</option>
+                <option value="AU">Australia</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BR">Brazil</option>n>
+                <option value="CA">Canada</option>
+                <option value="CN">China</option>
+                <option value="CO">Colombia</option>
+                <option value="DK">Denmark</option>
+                <option value="EG">Egypt</option>
+                <option value="ET">Ethiopia</option>
+                <option value="FI">Finland</option>
+                <option value="FR">France</option>
+                <option value="GR">Greece</option>
+                <option value="GL">Greenland</option>
+                <option value="HK">Hong Kong</option>
+                <option value="HU">Hungary</option>
+                <option value="IS">Iceland</option>
+                <option value="IN">India</option>
+                <option value="ID">Indonesia</option>
+                <option value="IR">Iran</option>
+                <option value="IQ">Iraq</option>
+                <option value="JE">Jersey</option>
+                <option value="JO">Jordan</option>
+                <option value="KZ">Kazakhstan</option>
+                <option value="KE">Kenya</option>
+                <option value="KI">Kiribati</option>
+                <option value="KP">North Korea</option>
+                <option value="KR">South Korea</option>
+                <option value="KW">Kuwait</option>
+                <option value="KG">Kyrgyzstan</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libya</option>
+                <option value="MY">Malaysia</option>
+                <option value="MV">Maldives</option>
+                <option value="ML">Mali</option>
+                <option value="MT">Malta</option>
+                <option value="MH">Marshall Islands</option>
+                <option value="MQ">Martinique</option>
+                <option value="MX">Mexico</option>
+                <option value="FM">Micronesia</option>
+                <option value="MD">Moldova</option>
+                <option value="MC">Monaco</option>
+                <option value="MN">Mongolia</option>
+                <option value="NR">Nauru</option>
+                <option value="NP">Nepal</option>
+                <option value="NL">Netherlands</option>
+                <option value="NC">New Caledonia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="NI">Nicaragua</option>
+                <option value="NE">Niger</option>
+                <option value="NG">Nigeria</option>
+                <option value="NU">Niue</option>
+                <option value="PK">Pakistan</option>
+                <option value="PW">Palau</option>
+                <option value="PA">Panama</option>
+                <option value="PG">Papua New Guinea</option>
+                <option value="PY">Paraguay</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="QA">Qatar</option>
+                <option value="RE">Réunion</option>
+                <option value="RO">Romania</option>
+                <option value="RU">Russian Federation</option>
+                <option value="RW">Rwanda</option>
+                <option value="ZA">South Africa</option>
+                <option value="GS">South Georgia</option>
+                <option value="SS">South Sudan</option>
+                <option value="ES">Spain</option>
+                <option value="LK">Sri Lanka</option>
+                <option value="SD">Sudan</option>
+                <option value="SR">Suriname</option>
+                <option value="CH">Switzerland</option>
+                <option value="SY">Syrian Arab Republic</option>
+                <option value="TW">Taiwan</option>
+                <option value="TJ">Tajikistan</option>
+                <option value="TO">Tonga</option>
+                <option value="UG">Uganda</option>
+                <option value="UA">Ukraine</option>
+                <option value="AE">United Arab Emirates</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States<.</option>
+                <option value="WF">Wallis and Futuna</option>
+                <option value="EH">Western Sahara</option>
+                <option value="YE">Yemen</option>
+                <option value="ZM">Zambia</option>
+                <option value="ZW">Zimbabwe</option>
+            </select>
+            <button id = "search-btn" class="btn">Search</button>
+            
+        </section>
+    </header>
+    <main class="main">
+        
+        <section id="weather-box" class = "weather-box">
+            <div class="weather-box--header">
+                <div class="weather-box--city-info">
+                    <h2 id="city"></h2>
+                    <H2 id="country"></H2>
+                </div>
+                <div class="weather-box--header__icon">
+                    <img id="icon" src="" alt="Wheather icon">
+                    <p id="status"></p>
+                    <p id="temperature" ></p>
+                </div>
+            </div>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
