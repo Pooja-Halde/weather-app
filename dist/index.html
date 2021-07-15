@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link rel='stylesheet' href='styles.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id='search-area'>
+    <input id='search-input' autofocus>
+    <button id='search-button'>
+      <img src='img/magnifying-glass.png'>
+    </button><button id='unit'>Farenheit</button>
+  </div>
+
+  <div id='error-message' class='hidden'>Sorry, no location found</div>
+
+    <div id='top-container'>
+      <div id='weather-result-container'>
+          <div id='city'></div>
+          <div id='climate'></div>
+          <div id='temp'></div>
+          <div id='high'></div>
+          <div id='low'></div>
+          <div id='feels-like'></div>
+          <div id='humidity'></div>
+          <div id='pop'></div>
+      </div>
+
+      <div id='current-weather-image-container'>
+        <img id='current-weather-img' src=''>
+      </div>
+
+    </div>
+
+    <div id='bottom-container'>
+      <div id='weather-days-container'>
+      </div>
+
+      <div id='weather-hours-container'>
+      </div>
+    </div>
+
+</body>
+
+<script src='main.js'></script>
+</html>
